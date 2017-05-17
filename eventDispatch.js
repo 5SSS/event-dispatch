@@ -9,7 +9,7 @@ export const eventDispatch = {
 	//on事件
 	on:function(eventName, callback) {
 		this.eventList[eventName] = callback;
-	}
+	},
 
 	//emit事件
 	emit:function(eventName) {
