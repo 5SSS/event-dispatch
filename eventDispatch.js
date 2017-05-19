@@ -18,7 +18,7 @@ export const eventDispatch = {
 			if(this.eventList[eventName]) this.eventList[eventName]();
 		}else{
 			var params = Array.prototype.slice.call(arguments, 1);
-			this.eventList[eventName].apply(this, params);
+			if(this.eventList[eventName]) this.eventList[eventName].apply(this, params);
 		}
 	}
 };
