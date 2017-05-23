@@ -1,8 +1,8 @@
 # event-dispatch
-javascript event dispatcher
+## javascript event dispatcher
 
-//example
-
+### example
+```javascript
 import { eventDispatch } from 'eventDispatch.js';
 
 eventDispatch.on('hello',function(){
@@ -16,3 +16,4 @@ eventDispatch.on('max',function(a, b) {
 });
 
 eventDispatch.emit('max',2,3); //3
+```
